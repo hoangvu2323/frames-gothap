@@ -875,6 +875,38 @@
         });
       });
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+            const name = document.getElementById("name");
+            const title = document.getElementById("title");
+            const message = document.getElementById("message");
+            const submit = document.getElementById("submit");
+            submit.addEventListener("click", (e) => {
+                e.preventDefault();
+                const data = {
+                    name: name.value,
+                    title: title.value,
+                    message: message.value,
+                };
+                postGoogle(data);
+            });
+        async function postGoogle(data){
+          const fomrURL = "https://docs.google.com/forms/d/e/1FAIpQLSfBqETauBnT3fWjsbbHljt4_-p9i9ASHtME8LaTm1RMM0ouow/formResponse";
+          const formData = new FormData();
+          formData.append("entry.1301803306", data.name);
+          formData.append("entry.866568416", data.title);
+          formData.append("entry.1912154780", data.message);
+          await fetch(fomrURL, {
+            method: "POST",
+            body: formData,
+          }
+          );
+          }
+        }
+        );
+    </script>
+
     <footer>
       <div class="bg-pinkred">
         <a href="/">
