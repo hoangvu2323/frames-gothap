@@ -37,6 +37,16 @@
   background-color: #e6285f;
 }
 
+.main-wrapper-0 {
+  background-image: url(assets/bg-form.png);
+  position: relative;
+  z-index: 1;
+  min-height: 920px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e6285f;
+}
+
 .modal {
   display: none;
   position: fixed;
