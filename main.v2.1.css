@@ -302,7 +302,7 @@ label span:before {
 }
 
 @media only screen and (max-width: 600px) {
-  .main-wrapper-0 {
+  .main-wrapper-bgf {
     background: linear-gradient(60deg, #e20613 0%, #ff9351 100%);
     min-height: auto;
     background-size: contain;
