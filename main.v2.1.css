@@ -30,7 +30,7 @@
 .main-wrapper-bgf {
   background-image: url(assets/bg-form.png);
   position: relative;
-  z-index: 2;
+  z-index: 1;
   min-height: 920px;
   background-size: contain;
   background-repeat: no-repeat;
