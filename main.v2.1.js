@@ -59,3 +59,4 @@ $(document).ready(function () {
       confirm("Gửi bài dự thi thành công!");
     });
   });
+});
