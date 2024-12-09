@@ -54,7 +54,7 @@ $(document).ready(function () {
   });
   $("#submit").click(function () {
     $(".loader-wrapper").show();
-    $(".loader-wrapper").fadeToggle(2500, function () {
+    $(".loader-wrapper").fadeToggle(2000, function () {
       window.location.reload();
       confirm("Gửi bài dự thi thành công!");
     });
