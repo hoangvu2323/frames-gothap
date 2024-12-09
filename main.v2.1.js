@@ -52,3 +52,10 @@ $(document).ready(function () {
       resetInput();
     }
   });
+  $("#submit").click(function () {
+    $(".loader-wrapper").show();
+    $(".loader-wrapper").fadeToggle(2500, function () {
+      window.location.reload();
+      confirm("Gửi bài dự thi thành công!");
+    });
+  });
